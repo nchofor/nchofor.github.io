@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.a{
+    text-decoration: none;
+}
+.hero{
+height: 100vh;
+width: 100vw;
+background: #ffff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+.logo::first-letter{
+    font-size: 40px;
+   border: 2px solid blue;
+    border-right: transparent;
+    padding-left: 5px;
+    color: #fd4766;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: black;
+    position: relative;
+    padding: 5px 0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #fd4766;
+}
+
+nav ul li a::after{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background: #fd4766;
+    transform: .3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.btn{
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #fd4766;
+  padding: 10px 30px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all .4s ease-in-out;
+  border: 2px solid #fd4766;
+  text-decoration: none;
+}
+.btn:hover{
+ background: transparent;
+ color: #fd4766;
+}
+.detail{
+    position: absolute;
+    top:35%;
+    left: 8%;
+
+}
+.detail h1{
+    color: #1f1f25;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.detail h1 span{
+    color: #fd4766;
+}
+
+.detail p{
+    color: #1f1f25;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-top: 50px;
+}
+.image img{
+    float: left;
+    margin-left: 350px;
+    display: block;
+    width: 500px;
+    height: 500px;
+}
+.image{
+    width: 28%;
+    height: 70%;
+    right:80%;
+    position: absolute;
+    bottom: 0;
+    right:200px;
+    margin-right: .5em;
+    float: right;
+    margin: 0%;
+    padding-bottom: 260px;
+}
